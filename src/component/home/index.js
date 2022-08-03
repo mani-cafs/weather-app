@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import * as ant                        from "antd";
+import * as ant                       from "antd";
 import Weather                        from "../weather";  
 export default function Home() {
     const [lat, setLat]   = useState([]);
     const [long, setLong] = useState([]);
     const [data, setData] = useState([]);
-    
+
     useEffect(() => {
         var api_url = 'https://api.openweathermap.org/data/2.5'
         var api_key = `ac57f98ebbacbc922a7df1b373903e22`
@@ -25,6 +25,7 @@ export default function Home() {
 
     return (
         <div>
+            <h3 style={{textAlign:"center"}}>Weather App</h3>
             {(typeof data.main !== 'undefined') ? (
                 <Weather weatherData={data}/>
             ): (

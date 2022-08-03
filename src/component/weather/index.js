@@ -8,13 +8,17 @@ export default function Weather(props) {
     const refresh = () => {
         window.location.reload();
     }
-
+    
     return (
         <ant.Row className='main'>
-            <div className="top ">
+            <div className="top">
                 <p className="header">{props.weatherData.name}</p>
                 <ant.Button style={{width:"35px",height:"35px"}} type="primary" shape="circle" icon={<icon.ReloadOutlined />} onClick={refresh}/>
             </div>
+            <ant.Col>
+            <img className="weathorIcon" style={{height:"260px",width:"285px"}}
+              src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" />
+            </ant.Col>
             <ant.Col md={24} className='info' style={{display:"flex",justifyContent:"space-between"}}>
                 <p className="day">Day: {moment().format('dddd')}</p>
                 <p className="day">{moment().format('LL')}</p>

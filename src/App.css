@@ -1,13 +1,18 @@
+body{
+    background-image: linear-gradient(to right top, #cfb8c5, #d1becf, #d2c4d8, #d1cae2, #d0d1ea, #c2d9f8, #ace3ff, #97edff, #75faf0, #82ffc9, #b7ff93, #fbfb5f);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
 .main{
     width: 600px;
     border-radius: 20px;
-    background-color: #01579b;
-    margin: 0px 20px;
+    background-color: #ABC9FF;
+    margin: 20px 280px;
 }
 
 .top{
     height: 60px;
-    background-color: #424242;
+    background-color: #FFF89C;
     color: whitesmoke;
     width: 600px;
     padding: 10px;
@@ -18,8 +23,8 @@
 }
 
 .header{
-    background-color: #424242;
-    color: whitesmoke;
+    background-color: #FFF89C;
+    color: #000;
     margin: 0px;
     font-size: 25px;
     border-radius: 20px 20px 0 0;
@@ -28,7 +33,7 @@
 
 .day{
     padding: 15px;
-    color: whitesmoke;
+    color: #000;
     font-family: 'Recursive', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -36,7 +41,7 @@
 
 .temp{
     padding: 15px;
-    color: whitesmoke;
+    color: #000;
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
 }
@@ -48,14 +53,14 @@
 
 .sunrise-sunset{
     padding: 15px;
-    color: whitesmoke;
+    color: #000;
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
 
 .description{
     padding: 15px;
-    color: whitesmoke;
+    color: #000;
     font-family: 'Recursive', sans-serif;
     font-size: 24px;
     font-weight: 600;
