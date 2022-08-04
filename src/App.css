@@ -1,48 +1,45 @@
 body{
     /* background-image: linear-gradient(to right top, #cfb8c5, #d1becf, #d2c4d8, #d1cae2, #d0d1ea, #c2d9f8, #ace3ff, #97edff, #75faf0, #82ffc9, #b7ff93, #fbfb5f); */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 .main{
-    width: 600px;
+    width: 400px;
     border-radius: 20px;
-    background-color: #ABC9FF;
-    margin: 20px 0px;
+    /* background-color: #ABC9FF; */
+    margin: 20px 650px;
 }
 
 .top{
     height: 60px;
-    background-color: #FFF89C;
+    /* background-color: #FFF89C; */
     color: whitesmoke;
     width: 600px;
     padding: 10px;
     border-radius: 20px 20px 0 0;
-    font-family: 'Recursive', sans-serif;
     display: flex;
     justify-content: space-between;
 }
 
 .header{
-    background-color: #FFF89C;
+    /* background-color: #FFF89C; */
     color: #000;
     margin: 0px;
     font-size: 25px;
+    font-weight: 800;
     border-radius: 20px 20px 0 0;
-    font-family: 'Recursive', sans-serif;
 }
 
 .day{
-    padding: 15px;
+    padding: 0px 15px;
     color: #000;
-    font-family: 'Recursive', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
 
 .temp{
-    padding: 15px;
+    padding: 5px 15px;
     color: #000;
-    font-family: 'Recursive', sans-serif;
     font-size: 18px;
 }
 
@@ -52,16 +49,42 @@ body{
 }
 
 .sunrise-sunset{
-    padding: 15px;
+    padding: 5px 15px;
     color: #000;
-    font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
 
 .description{
     padding: 15px;
     color: #000;
-    font-family: 'Recursive', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
+@media only screen and (min-width: 600px) {
+    .main{
+        position:absolute;
+        left:15%;
+    }
+}
+@media only screen and (min-width: 820) {
+    .main{
+        position:absolute;
+        left:25%;
+    }
+}
+.video {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#myVideo {
+    position: fixed;
+    /* right: 0;
+    left: 0;
+    bottom: 0; */
+    min-width: 100%; 
+    min-height: 100%;
+  }

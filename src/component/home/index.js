@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as ant                       from "antd";
-import Weather                        from "../weather";  
+import Weather                        from "../weather";
+import BgVideo                        from '../../assets/videos/bg_video.mp4'
 export default function Home() {
     const [lat, setLat]   = useState([]);
     const [long, setLong] = useState([]);
@@ -18,7 +19,6 @@ export default function Home() {
             .then(res => res.json())
             .then(result => {
                 setData(result)
-                console.log(data)
             });
         }
         fetchData();
@@ -26,14 +26,17 @@ export default function Home() {
 
     return (
         <ant.Row>
-            <ant.Col md={24} sm={12} xs={24}>
-                <h3 style={{textAlign:"center"}}>Weather App</h3>
-                {(typeof data.main !== 'undefined') ? (
+            <video autoPlay muted loop id="myVideo">
+                <source src={BgVideo} type="video/mp4" />
+            </video>
+            <h3 style={{textAlign:"center"}}>Weather App</h3>
+            {(typeof data.main !== 'undefined') ? (
+                <ant.Col md={24} sm={12} xs={24}>
                     <Weather weatherData={data}/>
-                ): (
-                    <ant.Spin/>
-                )}
-            </ant.Col>
+                </ant.Col>
+            ): (
+                <ant.Spin/>
+            )}
         </ant.Row>
     )
 }
