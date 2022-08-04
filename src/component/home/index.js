@@ -18,19 +18,22 @@ export default function Home() {
             .then(res => res.json())
             .then(result => {
                 setData(result)
+                console.log(data)
             });
         }
         fetchData();
     }, [lat,long])
 
     return (
-        <div>
-            <h3 style={{textAlign:"center"}}>Weather App</h3>
-            {(typeof data.main !== 'undefined') ? (
-                <Weather weatherData={data}/>
-            ): (
-                <ant.Spin/>
-            )}
-        </div>
+        <ant.Row>
+            <ant.Col md={24} sm={12} xs={24}>
+                <h3 style={{textAlign:"center"}}>Weather App</h3>
+                {(typeof data.main !== 'undefined') ? (
+                    <Weather weatherData={data}/>
+                ): (
+                    <ant.Spin/>
+                )}
+            </ant.Col>
+        </ant.Row>
     )
 }

@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right top, #cfb8c5, #d1becf, #d2c4d8, #d1cae2, #d0d1ea, #c2d9f8, #ace3ff, #97edff, #75faf0, #82ffc9, #b7ff93, #fbfb5f);
+    /* background-image: linear-gradient(to right top, #cfb8c5, #d1becf, #d2c4d8, #d1cae2, #d0d1ea, #c2d9f8, #ace3ff, #97edff, #75faf0, #82ffc9, #b7ff93, #fbfb5f); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
@@ -7,7 +7,7 @@ body{
     width: 600px;
     border-radius: 20px;
     background-color: #ABC9FF;
-    margin: 20px 280px;
+    margin: 20px 0px;
 }
 
 .top{
