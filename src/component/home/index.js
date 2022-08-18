@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import * as ant                       from "antd";
 import Weather                        from "../weather";
 import BgVideo                        from '../../assets/videos/bg_video.mp4'
+
+const api_url = 'https://api.openweathermap.org/data/2.5'
+const api_key = `ac57f98ebbacbc922a7df1b373903e22`
 export default function Home() {
     const [lat, setLat]   = useState([]);
     const [long, setLong] = useState([]);
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        var api_url = 'https://api.openweathermap.org/data/2.5'
-        var api_key = `ac57f98ebbacbc922a7df1b373903e22`
         const fetchData = async () => {
           navigator.geolocation.getCurrentPosition(function(position) {
             setLat(position.coords.latitude);
@@ -19,6 +20,7 @@ export default function Home() {
             .then(res => res.json())
             .then(result => {
                 setData(result)
+                console.log(data)
             });
         }
         fetchData();
