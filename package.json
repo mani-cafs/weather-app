@@ -4,6 +4,7 @@
   "homepage": "https://mani-cafs.github.io/weather-app",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.22.3",
     "axios": "^0.27.2",
+    "dompurify": "^2.3.10",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

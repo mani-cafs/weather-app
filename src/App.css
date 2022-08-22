@@ -1,5 +1,5 @@
 body{
-    /* background-image: linear-gradient(to right top, #cfb8c5, #d1becf, #d2c4d8, #d1cae2, #d0d1ea, #c2d9f8, #ace3ff, #97edff, #75faf0, #82ffc9, #b7ff93, #fbfb5f); */
+   /* background-image: linear-gradient(to bottom, #1f4070, #006f95, #009da1, #6cc79c, #d1ea9a); */
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -87,4 +87,7 @@ body{
     bottom: 0; */
     min-width: 100%; 
     min-height: 100%;
-  }
+}
+.ant-card-bordered .ant-card-cover{
+    padding: 10px;
+}
