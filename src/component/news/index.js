@@ -95,12 +95,11 @@ export default function News() {
     const open_info =(news_rslt)=>{
         setIsopen(true)
         setNewsInfo(news_rslt)
-        
     }
 
     return (
         <div>
-            <h3>News</h3>
+            <h3>News and Articles</h3>
             <ant.Row gutter={{xs: 8,sm: 16,md: 24,}}>
                 {renderData}
             </ant.Row>
